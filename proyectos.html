@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('img/fondove.png');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+        .text-dorado { color: #988b51; }
+
+        @media (min-width: 992px) {
+            body {
+                background-image: url('img/fondoele.png');
+                background-attachment: fixed;
+                background-position: center;
+            }
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-warning border-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html">Proyectos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link active text-warning" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container my-5">
+    <h2 class="text-center mb-4 text-dorado bg-white p-2 rounded shadow-sm d-inline-block mx-auto">Mis Proyectos</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/eventoss.png" class="card-img-top" alt="Sistema de Eventos" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-dorado">Sistema de Eventos</h5>
+                    <p class="card-text">Aplicación web para la administración integral de conferencias.
+                        Implementa persistencia de datos con LocalStorage para gestionar registros de asistentes
+                        y ponentes en tiempo real, permitiendo visualizar estadísticas de ocupación al instante.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/TSU.jpg" class="card-img-top" alt="Auditorias" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-dorado">Auditorias TSU</h5>
+                    <p class="card-text">Revisión de documentos e integración de evidencias docentes. Facilité la
+                        revisión, validación e integración de evidencias docentes, asegurando el cumplimiento normativo
+                        mediante listas de cotejo automatizadas y organización eficiente de documentos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/PuntoV.jpg" class="card-img-top" alt="Punto de Venta" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-dorado">Punto de Venta</h5>
+                    <p class="card-text">Sistema de gestión de inventarios y ventas administrativas. Solución
+                        administrativa para negocios que gestiona el control de inventarios y el procesamiento
+                        de ventas. Incluye lógica de negocio para el cálculo automático de totales, actualización
+                        de stock.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-4 mt-auto border-top border-secondary">
+    <div class="container">
+        <p class="mb-0">&copy; 2026 Mi Portafolio</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
